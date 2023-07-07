@@ -20,9 +20,9 @@ The prompt provides ChatGPT with the necessary details to execute the task. It i
 
 Here is the generated page: [Version 1](https://ai-writer.app/page/v1)
 
-## 2. Update the Page Design
+## 2. Add APP Screenshots
 
-Next, we update the page design. We want to remove the logo from the background and add app screenshots instead. Here's the prompt for ChatGPT:
+Next, we want to remove the logo from the background and add app screenshots instead. Here's the prompt for ChatGPT:
 
 ```
 Update the code: 
@@ -36,9 +36,9 @@ With this prompt, ChatGPT will generate a code that includes the updated design.
 
 Here is the generated page: [Version 2](https://ai-writer.app/page/v2)
 
-## 3. Final Touches
+## 3. Improve the Page Design
 
-For the final touches, we add the logo to the top left of the page and make the page fit the whole screen. Here's the prompt for ChatGPT:
+To improve the design, we add the logo to the top left of the page and make the page fit the whole screen. Here's the prompt for ChatGPT:
 
 ```
 Update the code: 
