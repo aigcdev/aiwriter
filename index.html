@@ -1,42 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <title>AI Writer App</title>
-    <style>
-        body {
-            background: url('https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000') no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Writer</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: "Poppins";
+    }
+    .main {
+      padding: 0 160px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+    }
+    .main .main-left-content {
+      width: 663px;
+      height: 615px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .main .main-left-content .title {
+      width: 171px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .main .main-left-content .title img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+    .main .main-left-content .title .writer {
+      font-family: "Poppins";
+      font-size: 28px;
+      color: #191a15;
+    }
+    .main .main-left-content .content {
+      width: 100%;
+      height: 543px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .main .main-left-content .content .description {
+      width: 568px;
+      height: 218px;
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .main .main-left-content .content .info {
+      width: 528px;
+      height: 71px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .main .main-left-content .content .info .store {
+      width: 155px;
+    }
+    .main .main-left-content .content .info .download {
+      width: 113px;
+    }
+    .main .main-left-content .content .info .grade {
+      width: 110px;
+    }
+    .main .main-left-content .content .info .data {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main .main-left-content .content .info .data .data-number {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .main .main-left-content .content .info .data .data-message {
+      font-size: 16px;
+    }
+    .main .main-left-content .content .info .data img {
+      width: 110px;
+      height: 16px;
+    }
+    .main .main-left-content .content .info .line {
+      height: 65%;
+      border-left: 1px #10a37f solid;
+    }
+    .main .main-left-content .content .download-method {
+      width: 100%;
+      height: 166px;
+      display: flex;
+    }
+    .main .main-left-content .content .download-method .code {
+      width: 122px;
+      height: 100%;
+      font-size: 14px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 14px;
+    }
+    .main .main-left-content .content .download-method .code img {
+      height: 122px;
+    }
+    .main .main-left-content .content .download-method .link {
+      width: 497px;
+      height: 142px;
+      margin-left: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .main .main-left-content .content .download-method .link .link-button {
+      width: 312px;
+      height: 44px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .main .main-left-content .content .download-method .link .link-button .app {
+      width: 132px;
+      height: 44px;
+    }
+    .main .main-left-content .content .download-method .link .link-button .google {
+      height: 148px;
+      height: 44px;
+    }
+    .main .main-right-show {
+      width: 659px;
+      height: 836px;
+      position: relative;
+    }
+    .main .main-right-show img {
+      width: 659px;
+      height: 932px;
+      position: absolute;
+      top: 0;
+      left: 83px;
+    }
+    @media (max-width: 768px) {
+      html {
+        font-size: 5.3333vw;
+      }
+      #main.main {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        padding: 0.25rem;
+        box-sizing: border-box;
+        display: block;
+      }
+      #main.main .main-left-content {
+        width: 98%;
+        height: 22.5rem;
+        display: block;
+      }
+      #main.main .main-left-content .title {
+        width: 100%;
+        height: 1.5rem;
+        display: flex;
+      }
+      #main.main .main-left-content .title img {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0.2rem;
+      }
+      #main.main .main-left-content .title .writer {
+        font-size: 0.9rem;
+      }
+      #main.main .main-left-content .content {
+        width: 100%;
+        height: 20rem;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      #main.main .main-left-content .content .description {
+        width: 90%;
+        height: 5rem;
+        margin-top: 0.25rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+      #main.main .main-left-content .content .info {
+        width: 92%;
+        height: 2.5rem;
+      }
+      #main.main .main-left-content .content .info .store {
+        width: 3.875rem;
+      }
+      #main.main .main-left-content .content .info .download {
+        width: 2.825rem;
+      }
+      #main.main .main-left-content .content .info .grade {
+        width: 2.75rem;
+      }
+      #main.main .main-left-content .content .info .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+      }
+      #main.main .main-left-content .content .info .data .data-number {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      #main.main .main-left-content .content .info .data .data-message {
+        font-size: 0.4rem;
+      }
+      #main.main .main-left-content .content .info .data img {
+        width: 2.75rem;
+        height: 0.4rem;
+      }
+      #main.main .main-left-content .content .download-method {
+        width: 100%;
+        height: 4.15rem;
+        display: block;
+      }
+      #main.main .main-left-content .content .download-method .code {
+        width: 8rem;
+        height: 9.5rem;
+        margin: 0.8rem auto;
+        margin-top: 17rem;
+        font-size: 0.35rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 0.6rem;
+      }
+      #main.main .main-left-content .content .download-method .code img {
+        height: 8rem;
+      }
+      #main.main .main-left-content .content .download-method .link {
+        width: 100%;
+        height: 3.55rem;
+        margin-left: 0;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      #main.main .main-left-content .content .download-method .link .link-button {
+        width: 100%;
+        height: 1.1rem;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #main.main .main-left-content .content .download-method .link .link-button .app {
+        width: 4.5rem;
+        height: 1.5rem;
+      }
+      #main.main .main-left-content .content .download-method .link .link-button .google {
+        height: 5.04rem;
+        height: 1.5rem;
+      }
+      #main.main .main-left-content .content .download-method .link .introduce {
+        width: 80%;
+        height: 4.5rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 0.35rem;
+        text-align: center;
+      }
+      #main.main .main-right-show {
+        display: block;
+        width: 12rem;
+        height: 0;
+        position: relative;
+      }
+      #main.main .main-right-show img {
+        width: 12rem;
+        height: 15rem;
+        position: absolute;
+        top: -12rem;
+        left: 2.6rem;
+      }
+    }
+  
+  </style>
 </head>
-<body class="h-screen">
-    <div class="h-full flex flex-col items-center justify-center py-5">
-        <div class="w-full md:w-1/2 bg-white p-10 rounded shadow-xl text-center h-full flex flex-col justify-between">
-            <img class="h-16 w-16 mb-5 self-start" src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/20/ee/17/20ee170e-b8d6-2d43-4dc5-8d50d7fe4b78/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp" alt="AI Writer App Logo">
-            <div>
-                <h1 class="text-3xl md:text-5xl font-bold mb-5">Welcome to AI Writer App</h1>
-                <p class="text-lg mb-10">AI Writer is a revolutionary app that leverages artificial intelligence to assist you with your writing. Whether you are working on a novel, an essay, or simply drafting an email, AI Writer is your perfect writing companion.</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/b8/17/d7/b817d7bd-46e4-d243-0061-73e0b84a10d5/a9b49371-7b40-4e1a-b54b-59c69b550817_6.5-posterv4-01.png/230x0w.webp" alt="App Screenshot 1">
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/5a/09/7f/5a097fee-fa68-1f5d-6f83-d11e407c03be/94aaf4a8-d823-49df-81fe-6f487293776b_6.5-poster-01.png/230x0w.webp" alt="App Screenshot 2">
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/04/cb/17/04cb17d5-d0d9-6259-bed7-b083a797e628/6b7505af-944b-4f97-ad9a-342c2d08de6d_6.5-poster-02.png/230x0w.webp" alt="App Screenshot 3">
-                </div>
-            </div>
-            <div class="flex justify-around">
-                <a href="https://apps.apple.com/app/id1639845219">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download for iOS</button>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.ai.chat.writer">
-                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Download for Android</button>
-                </a>
-            </div>
+<body>
+  <div class="main" id="main">
+    <div class="main-left-content">
+      <div class="title">
+        <img src="https://framerusercontent.com/images/5rra1EnJHm9SdHnxyOnFE1NqGvc.png" alt="icon">
+        <h2 class="writer">AI Writer</h2>
+      </div>
+      <div class="content">
+        <div class="description">
+          <span>Write emails, essays, articles in seconds!</span>
         </div>
+        <div class="info">
+          <div class="data store">
+            <span class="data-number">#1</span>
+            <span class="data-message">in the App Store US</span>
+          </div>
+          <div class="line"></div>
+          <div class="data download">
+            <span class="data-number">10M+</span>
+            <span class="data-message">Downloads</span>
+          </div>
+          <div class="line"></div>
+          <div class="data grade">
+            <span class="data-number">2M+</span>
+            <img src="https://framerusercontent.com/images/l3ZchMJQ6OQ2Y9gaUGCyZDrRWAw.png" alt="grade">
+          </div>
+        </div>
+        <div class="download-method">
+          <div class="code">
+            <img src="https://framerusercontent.com/images/P0eoMFePAEfn6LmPmnoWGQiJU0.png" alt="code">
+            <span>Scan the QR code to download APP</span>
+          </div>
+          <div class="link">
+            <div class="link-button">
+              <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
+              <img class="google" src="https://framerusercontent.com/images/V3RfLHAWvhCOKga0G5tQ9R4c6g0.png" alt="Google">
+            </div>
+            <div class="introduce">The revolutionary new way to create content powered by ChatGPT & GPT-4, GPT-3. It makes writing easier than ever before. Get started today and experience the power of AI!</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="main-right-show">
+      <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
+    </div>
+  </div>
 </body>
 </html>
