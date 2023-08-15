@@ -127,17 +127,20 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .main .main-left-content .content .download-method .link .link-button {
+    .link-button {
       width: 312px;
-      height: 44px;
+      padding: 20px 0;
       display: flex;
       justify-content: space-between;
     }
-    .main .main-left-content .content .download-method .link .link-button .app {
+    .link-button a {
+      display: inline-block;
+    }
+    .link-button .app {
       width: 132px;
       height: 44px;
     }
-    .main .main-left-content .content .download-method .link .link-button .google {
+    .link-button .google {
       height: 148px;
       height: 44px;
     }
@@ -152,6 +155,12 @@
       position: absolute;
       top: 0;
       left: 83px;
+    }
+    .pc {
+      display: block;
+    }
+    .mobile {
+      display: none;
     }
     @media (max-width: 768px) {
       html {
@@ -231,14 +240,14 @@
       }
       #main.main .main-left-content .content .download-method {
         width: 100%;
-        height: 4.15rem;
+        height: auto;
         display: block;
       }
       #main.main .main-left-content .content .download-method .code {
         width: 8rem;
         height: 9.5rem;
         margin: 0.8rem auto;
-        margin-top: 17rem;
+        margin-top: 1rem;
         font-size: 0.35rem;
         text-align: center;
         display: flex;
@@ -258,18 +267,18 @@
         flex-direction: column;
         justify-content: space-between;
       }
-      #main.main .main-left-content .content .download-method .link .link-button {
+      .link-button {
         width: 100%;
-        height: 1.1rem;
+        height: auto;
         margin-top: 0.5rem;
         display: flex;
         justify-content: space-evenly;
       }
-      #main.main .main-left-content .content .download-method .link .link-button .app {
+      .link-button .app {
         width: 4.5rem;
         height: 1.5rem;
       }
-      #main.main .main-left-content .content .download-method .link .link-button .google {
+      .link-button .google {
         height: 5.04rem;
         height: 1.5rem;
       }
@@ -282,18 +291,23 @@
         font-size: 0.35rem;
         text-align: center;
       }
-      #main.main .main-right-show {
+      .main-right-show.mobile {
         display: block;
-        width: 12rem;
-        height: 0;
+        width: 100%;
+        height: auto;
         position: relative;
       }
-      #main.main .main-right-show img {
-        width: 12rem;
-        height: 15rem;
-        position: absolute;
-        top: -12rem;
-        left: 2.6rem;
+      .main-right-show.mobile img {
+        width: 100%;
+        height: fit-content;
+        margin-top: -2rem;
+        position: static;
+      }
+      .pc {
+        display: none !important;
+      }
+      .mobile {
+        display: flex !important;
       }
     }
 
@@ -326,13 +340,24 @@
             <img src="https://framerusercontent.com/images/l3ZchMJQ6OQ2Y9gaUGCyZDrRWAw.png" alt="grade">
           </div>
         </div>
+        <div class="link-button mobile">
+          <a target="_blank" href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8">
+            <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
+          </a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ai.chat.writer">
+            <img class="google" src="https://framerusercontent.com/images/V3RfLHAWvhCOKga0G5tQ9R4c6g0.png" alt="Google">
+          </a>
+        </div>
+        <div class="main-right-show mobile">
+          <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
+        </div>
         <div class="download-method">
           <div class="code">
             <img src="https://framerusercontent.com/images/P0eoMFePAEfn6LmPmnoWGQiJU0.png" alt="code">
             <span>Scan the QR code to download APP</span>
           </div>
           <div class="link">
-            <div class="link-button">
+            <div class="link-button pc">
               <a target="_blank" href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8">
                 <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
               </a>
@@ -345,9 +370,18 @@
         </div>
       </div>
     </div>
-    <div class="main-right-show">
+    <div class="main-right-show pc">
       <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
     </div>
   </div>
 </body>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0Z18YVXD9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C0Z18YVXD9');
+</script>
 </html>
