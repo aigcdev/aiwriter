@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Writer - Write Emails, Essays and Articles in Seconds</title>
-  <meta name="description" content="Experience the revolutionary new way to create content with our AI Writer. Powered by ChatGPT & GPT-4, GPT-3. Makes writing easier than ever before.">
+  <meta name="description"
+    content="Experience the revolutionary new way to create content with our AI Writer. Powered by ChatGPT & GPT-4, GPT-3. Makes writing easier than ever before.">
   <meta name="keywords" content="AI Writer, Emails, Essays, Articles, AI, ChatGPT, GPT-4, GPT-3">
   <link rel="canonical" href="https://ai-writer.app" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -16,9 +20,11 @@
       padding: 0;
       margin: 0;
     }
+
     body {
       font-family: "Poppins";
     }
+
     .main {
       padding: 0 20px;
       width: 1345px;
@@ -27,6 +33,7 @@
       display: flex;
       align-items: center;
     }
+
     .main .main-left-content {
       width: 663px;
       height: 615px;
@@ -34,6 +41,7 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
     .main .main-left-content .title {
       width: 171px;
       height: 40px;
@@ -41,16 +49,19 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .main .main-left-content .title img {
       width: 40px;
       height: 40px;
       border-radius: 8px;
     }
+
     .main .main-left-content .title .writer {
       font-family: "Poppins";
       font-size: 28px;
       color: #191a15;
     }
+
     .main .main-left-content .content {
       width: 100%;
       height: 543px;
@@ -58,6 +69,7 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
     .main .main-left-content .content .description {
       width: 568px;
       height: 218px;
@@ -65,47 +77,58 @@
       font-weight: 600;
       line-height: 1;
     }
+
     .main .main-left-content .content .info {
       width: 528px;
       height: 71px;
       display: flex;
       justify-content: space-between;
     }
+
     .main .main-left-content .content .info .store {
       width: 155px;
     }
+
     .main .main-left-content .content .info .download {
       width: 113px;
     }
+
     .main .main-left-content .content .info .grade {
       width: 110px;
     }
+
     .main .main-left-content .content .info .data {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
+
     .main .main-left-content .content .info .data .data-number {
       font-size: 40px;
       font-weight: 600;
     }
+
     .main .main-left-content .content .info .data .data-message {
       font-size: 16px;
     }
+
     .main .main-left-content .content .info .data img {
       width: 110px;
       height: 16px;
     }
+
     .main .main-left-content .content .info .line {
       height: 65%;
       border-left: 1px #10a37f solid;
     }
+
     .main .main-left-content .content .download-method {
       width: 100%;
       height: 166px;
       display: flex;
     }
+
     .main .main-left-content .content .download-method .code {
       width: 122px;
       height: 100%;
@@ -116,9 +139,11 @@
       justify-content: space-between;
       line-height: 14px;
     }
+
     .main .main-left-content .content .download-method .code img {
       height: 122px;
     }
+
     .main .main-left-content .content .download-method .link {
       width: 497px;
       height: 142px;
@@ -127,28 +152,34 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
     .link-button {
       width: 312px;
       padding: 20px 0;
       display: flex;
       justify-content: space-between;
     }
+
     .link-button a {
       display: inline-block;
     }
+
     .link-button .app {
       width: 132px;
       height: 44px;
     }
+
     .link-button .google {
       height: 148px;
       height: 44px;
     }
+
     .main .main-right-show {
       width: 659px;
       height: 836px;
       position: relative;
     }
+
     .main .main-right-show img {
       width: 659px;
       height: 932px;
@@ -156,16 +187,20 @@
       top: 0;
       left: 83px;
     }
+
     .pc {
       display: block;
     }
+
     .mobile {
       display: none;
     }
+
     @media (max-width: 768px) {
       html {
         font-size: 5.3333vw;
       }
+
       #main.main {
         width: 100vw;
         height: 100vh;
@@ -174,30 +209,36 @@
         box-sizing: border-box;
         display: block;
       }
+
       #main.main .main-left-content {
         width: 98%;
         height: 22.5rem;
         display: block;
       }
+
       #main.main .main-left-content .title {
         width: 100%;
         height: 1.5rem;
         display: flex;
       }
+
       #main.main .main-left-content .title img {
         width: 1.5rem;
         height: 1.5rem;
         border-radius: 0.2rem;
       }
+
       #main.main .main-left-content .title .writer {
         font-size: 0.9rem;
       }
+
       #main.main .main-left-content .content {
         width: 100%;
         height: 20rem;
         align-items: center;
         justify-content: flex-start;
       }
+
       #main.main .main-left-content .content .description {
         width: 90%;
         height: 5rem;
@@ -207,19 +248,24 @@
         text-align: center;
         margin-top: 0.5rem;
       }
+
       #main.main .main-left-content .content .info {
         width: 92%;
         height: 2.5rem;
       }
+
       #main.main .main-left-content .content .info .store {
         width: 3.875rem;
       }
+
       #main.main .main-left-content .content .info .download {
         width: 2.825rem;
       }
+
       #main.main .main-left-content .content .info .grade {
         width: 2.75rem;
       }
+
       #main.main .main-left-content .content .info .data {
         display: flex;
         flex-direction: column;
@@ -227,22 +273,27 @@
         align-items: center;
         text-align: center;
       }
+
       #main.main .main-left-content .content .info .data .data-number {
         font-size: 1rem;
         font-weight: 600;
       }
+
       #main.main .main-left-content .content .info .data .data-message {
         font-size: 0.4rem;
       }
+
       #main.main .main-left-content .content .info .data img {
         width: 2.75rem;
         height: 0.4rem;
       }
+
       #main.main .main-left-content .content .download-method {
         width: 100%;
         height: auto;
         display: block;
       }
+
       #main.main .main-left-content .content .download-method .code {
         width: 8rem;
         height: 9.5rem;
@@ -255,9 +306,11 @@
         justify-content: space-between;
         line-height: 0.6rem;
       }
+
       #main.main .main-left-content .content .download-method .code img {
         height: 8rem;
       }
+
       #main.main .main-left-content .content .download-method .link {
         width: 100%;
         height: 3.55rem;
@@ -267,6 +320,7 @@
         flex-direction: column;
         justify-content: space-between;
       }
+
       .link-button {
         width: 100%;
         height: auto;
@@ -274,14 +328,17 @@
         display: flex;
         justify-content: space-evenly;
       }
+
       .link-button .app {
         width: 4.5rem;
         height: 1.5rem;
       }
+
       .link-button .google {
         height: 5.04rem;
         height: 1.5rem;
       }
+
       #main.main .main-left-content .content .download-method .link .introduce {
         width: 80%;
         height: 4.5rem;
@@ -291,97 +348,450 @@
         font-size: 0.35rem;
         text-align: center;
       }
+
       .main-right-show.mobile {
         display: block;
         width: 100%;
         height: auto;
         position: relative;
       }
+
       .main-right-show.mobile img {
         width: 100%;
         height: fit-content;
         margin-top: -2rem;
         position: static;
       }
+
       .pc {
         display: none !important;
       }
+
       .mobile {
         display: flex !important;
       }
     }
 
+
+    .single-line {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .three-line {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+
+    /* template */
+    .section__title {
+      margin: auto;
+      text-align: center;
+      color: #101931;
+      font-size: 40px;
+      /* height: 100px; */
+      line-height: 60px;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: -1px;
+      text-transform: capitalize;
+    }
+
+    /* template tags */
+    .templates .templates__tags .tag {
+      border: 1px solid #e0e0e0;
+      border-radius: 999px;
+      cursor: pointer;
+      padding: 5px 18px;
+      transition: all .3s ease 0s;
+    }
+
+    .templates .templates__tags .tag.active {
+      border: 1px solid #2355ec;
+    }
+
+    /* template list */
+    .templates .templates__list {
+      column-gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 360px);
+      justify-content: space-evenly;
+      row-gap: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .templates .templates__list {
+        grid-template-columns: repeat(auto-fill, 300px);
+        row-gap: 40px;
+      }
+    }
+
+    .dialog__content {
+      padding: 16px;
+      column-gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 320px);
+      justify-content: space-evenly;
+      row-gap: 20px;
+    }
+
+    .template__card {
+      font-family: Poppins;
+      text-decoration: none;
+      background: #fff;
+      border: 1px solid rgba(145, 163, 187, .2);
+      border-radius: 24px;
+      box-shadow: 0 0 24px #0000000f, 0 0 10px #0000000d;
+      color: inherit;
+      padding: 20px 16px;
+    }
+
+    .template__card .icon-list {
+      display: flex;
+    }
+
+    .template__card .icon-list .icon {
+      align-items: center;
+      background: #fff;
+      border: 1px solid rgba(145, 163, 187, .2);
+      border-radius: 50%;
+      box-shadow: 0 0 24px #0000000f, 0 0 10px #0000000d;
+      color: #4f8ef5;
+      display: flex;
+      font-size: 22px;
+      font-weight: 600;
+      height: 40px;
+      justify-content: center;
+      letter-spacing: 0;
+      overflow: hidden;
+      width: 40px;
+    }
+
+    .template__card .title {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-top: 12px;
+    }
+
+    .template__card .description {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 8px;
+    }
+
+    .show-more__button {
+      font-feature-settings: "clig" off, "liga" off;
+      background: #0056f5;
+      border-radius: 64px;
+      box-shadow: 0 10px 30px #005aff33;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin: 28px auto 0;
+      padding: 16px 48px;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+
+    /* review */
+    /* review list */
+    .review {
+      font-family: Poppins;
+    }
+
+    .review .review__list {
+      column-gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 360px);
+      justify-content: space-evenly;
+      row-gap: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .review .review__list {
+        grid-template-columns: repeat(auto-fill, 300px);
+        row-gap: 40px;
+      }
+    }
+
+    .review__list .review-list__item {
+      min-height: 184px;
+      height: 100%;
+      padding: 13px 16px 16px;
+      background-color: #f8f8f8;
+      border-radius: 6px;
+      align-self: start;
+    }
+
+    .stars {
+      display: inline-flex;
+    }
+
+    .stars .stars__star {
+      width: 25px;
+      height: 25px;
+
+      background-image: url(https://storage.googleapis.com/aistore/writer/upload/1695264072452_15.svg);
+    }
+
+    .review .user {
+      margin-top: 3px;
+      margin-bottom: 15px;
+      color: #636366;
+      font-size: 12px;
+      line-height: 1.33337;
+      font-weight: 500;
+      letter-spacing: 0;
+      font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .review .user-review .user-review__title,
+    .review .response .response__title {
+      font-size: 13px;
+      line-height: 1.38462;
+      font-weight: 500;
+      letter-spacing: -.005em;
+      font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .review .user-review .user-review__text,
+    .review .response .response__text {
+      margin-top: 2px;
+      font-size: 13px;
+      line-height: 1.38462;
+      color: #1d1d1f;
+      font-weight: 400;
+      letter-spacing: -.005em;
+      font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .review .response {
+      margin-top: 18px;
+
+    }
+
+
+    /* footer */
+    .footer {
+      font-family: Poppins;
+      margin-top: 72px;
+      background-color: #101931;
+      padding: 80px 40px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    .footer .divider {
+      border-top: 1px solid hsla(240, 5%, 84%, .2);
+      color: #fff;
+      display: flex;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      justify-content: space-between;
+      line-height: 26px;
+      padding-top: 33px;
+      width: 100%;
+    }
+
+    .dialog {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, .5);
+      display: none;
+    }
+
+    .dialog.active {
+      display: block;
+    }
   </style>
+
 </head>
+
 <body>
-  <div class="main" id="main">
-    <div class="main-left-content">
-      <div class="title">
-        <img src="https://framerusercontent.com/images/5rra1EnJHm9SdHnxyOnFE1NqGvc.png" alt="icon">
-        <h1 class="writer">AI Writer</h1>
+  <div class="dialog">
+    <div class="w-full h-full flex items-center justify-center">
+      <div class="dialog__inner flex flex-col w-3/4 rounded-lg bg-white h-3/4">
+        <header class="dialog__header h-16 flex items-center justify-end pr-4">
+          <div class="dialog__close cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </header>
+
+        <div class="dialog__content flex-1 overflow-auto"></div>
       </div>
-      <div class="content">
-        <div class="description">
-          <span>Write emails, essays, articles in seconds!</span>
-        </div>
-        <div class="info">
-          <div class="data store">
-            <span class="data-number">#1</span>
-            <span class="data-message">in the App Store US</span>
-          </div>
-          <div class="line"></div>
-          <div class="data download">
-            <span class="data-number">10M+</span>
-            <span class="data-message">Downloads</span>
-          </div>
-          <div class="line"></div>
-          <div class="data grade">
-            <span class="data-number">2M+</span>
-            <img src="https://framerusercontent.com/images/l3ZchMJQ6OQ2Y9gaUGCyZDrRWAw.png" alt="grade">
-          </div>
-        </div>
-        <div class="link-button mobile">
-          <a target="_blank" href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8">
-            <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
-          </a>
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ai.chat.writer">
-            <img class="google" src="https://framerusercontent.com/images/V3RfLHAWvhCOKga0G5tQ9R4c6g0.png" alt="Google">
-          </a>
-        </div>
-        <div class="main-right-show mobile">
-          <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
-        </div>
-        <div class="download-method">
-          <div class="code">
-            <img src="https://framerusercontent.com/images/P0eoMFePAEfn6LmPmnoWGQiJU0.png" alt="code">
-            <span>Scan the QR code to download APP</span>
-          </div>
-          <div class="link">
-            <div class="link-button pc">
-              <a target="_blank" href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8">
-                <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
-              </a>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ai.chat.writer">
-                <img class="google" src="https://framerusercontent.com/images/V3RfLHAWvhCOKga0G5tQ9R4c6g0.png" alt="Google">
-              </a>
-            </div>
-            <div class="introduce">The revolutionary new way to create content powered by ChatGPT & GPT-4, GPT-3. It makes writing easier than ever before. Get started today and experience the power of AI!</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main-right-show pc">
-      <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
     </div>
   </div>
+
+  <div>
+    <div class="main" id="main">
+      <div class="main-left-content">
+        <div class="title">
+          <img src="https://framerusercontent.com/images/5rra1EnJHm9SdHnxyOnFE1NqGvc.png" alt="icon">
+          <h1 class="writer">AI Writer</h1>
+        </div>
+        <div class="content">
+          <div class="description">
+            <span>Write emails, essays, articles in seconds!</span>
+          </div>
+          <div class="info">
+            <div class="data store">
+              <span class="data-number">#1</span>
+              <span class="data-message">in the App Store US</span>
+            </div>
+            <div class="line"></div>
+            <div class="data download">
+              <span class="data-number">10M+</span>
+              <span class="data-message">Downloads</span>
+            </div>
+            <div class="line"></div>
+            <div class="data grade">
+              <span class="data-number">2M+</span>
+              <img src="https://framerusercontent.com/images/l3ZchMJQ6OQ2Y9gaUGCyZDrRWAw.png" alt="grade">
+            </div>
+          </div>
+          <div class="link-button mobile">
+            <a target="_blank" href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8">
+              <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
+            </a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ai.chat.writer">
+              <img class="google" src="https://framerusercontent.com/images/V3RfLHAWvhCOKga0G5tQ9R4c6g0.png"
+                alt="Google">
+            </a>
+          </div>
+          <div class="main-right-show mobile">
+            <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
+          </div>
+          <div class="download-method">
+            <div class="code">
+              <img src="https://framerusercontent.com/images/P0eoMFePAEfn6LmPmnoWGQiJU0.png" alt="code">
+              <span>Scan the QR code to download APP</span>
+            </div>
+            <div class="link">
+              <div class="link-button pc">
+                <a target="_blank" href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8">
+                  <img class="app" src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png" alt="App">
+                </a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ai.chat.writer">
+                  <img class="google" src="https://framerusercontent.com/images/V3RfLHAWvhCOKga0G5tQ9R4c6g0.png"
+                    alt="Google">
+                </a>
+              </div>
+              <div class="introduce">The revolutionary new way to create content powered by ChatGPT & GPT-4, GPT-3. It
+                makes writing easier than ever before. Get started today and experience the power of AI!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-right-show pc">
+        <img src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png" alt="iphone">
+      </div>
+    </div>
+
+    <div class="mt-8 sm:mt-32"></div>
+
+    <div class="templates mx-auto max-w-7xl">
+      <div class="mx-auto section__title">
+        Templates
+      </div>
+
+      <div class="templates__tags flex  flex-wrap py-8 px-2 gap-2 sm:py-16 sm:gap-4"></div>
+      <div class="templates__list "></div>
+
+      <div class="show-more">
+        <div data-v-83a1617b="" class="show-more__button pc">Show More</div>
+      </div>
+    </div>
+
+    <div class="review  max-w-7xl mx-auto mt-8 sm:mt-16">
+      <div class="mx-auto section__title">
+        Feedback
+      </div>
+
+      <div class="review__list mt-8 sm:mt-16"></div>
+
+      <div class="show-more">
+        <a class="app-store-link show-more__button pc" target="_blank" href="">
+          Show More
+        </a>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="max-w-7xl m-auto">
+
+        <div class="top  mb-8 text-white  items-center md:flex">
+          <div class="logo h-full flex items-center mr-8 mb-2 md:mb-0">
+            <img class="h-10" src="./assets/app_logo.png" alt="logo">
+          </div>
+
+          <div class="sections flex-1 flex gap-4">
+            <section class="section">
+              <a target="_blank" href="/policy.html">Privacy</a>
+            </section>
+            <section class="section">
+              <a target="_blank" href="/terms.html">Terms</a>
+            </section>
+            <section class="section">
+              <a target="_blank" href="/support.html">Support</a>
+            </section>
+
+            <!-- <section class="section">
+              <div>
+                Resources
+              </div>
+            </section> -->
+          </div>
+        </div>
+
+
+        <div class="divider"></div>
+
+        <div class="bottom flex flex-wrap" style="color: rgb(255, 255, 255);">
+          <div class="copyright text-xs sm:text-sm mb-2 sm:mb-0">
+            © Copyright 2023, All Rights Reserved
+          </div>
+
+          <div class="flex-1"></div>
+          <div class="contact-us text-xs sm:text-sm">
+            <a href="mailto:ai.writer@outlook.com" rel="noopener noreferrer"> Contact
+              Us: ai.writer@outlook.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0Z18YVXD9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-C0Z18YVXD9');
 </script>
+<script src="./index.js"></script>
+
 </html>

@@ -1,0 +1,6 @@
+node_modules
+__tmp__
+tailwind.config.js
+
+dist
+.DS_Store
