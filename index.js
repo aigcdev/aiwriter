@@ -39,7 +39,7 @@ function getLink() {
 function renderTemplateItem(item, index) {
   const link = getLink()
   return `
-<a class="template__card" href="${link}" rel="noopener noreferrer">
+<a class="template__card" target="_blank" href="${link}" rel="noopener noreferrer">
   <div class="icon-list">
     <div class="icon">${item.icon}</div>
   </div>
