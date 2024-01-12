@@ -53,23 +53,27 @@
       }
 
       .main .main-left-content .title {
-        width: 171px;
+        width: 188px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
 
-      .main .main-left-content .title img {
+      .main .main-left-content .title .logo {
         width: 40px;
         height: 40px;
         border-radius: 8px;
       }
 
       .main .main-left-content .title .writer {
-        font-family: 'Poppins';
-        font-size: 28px;
-        color: #191a15;
+        /* color: #fff; */
+        font-family: Poppins;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        /* letter-spacing: -4px; */
       }
 
       .main .main-left-content .content {
@@ -236,12 +240,17 @@
           padding: 0.25rem;
           height: 2.2rem;
           display: flex;
+          justify-content: start;
         }
 
-        #main.main .main-left-content .title img {
+        #main.main .main-left-content .title .logo {
           width: 1.8rem;
           height: 1.8rem;
           border-radius: 0.25rem;
+        }
+
+        #main.main .main-left-content .title .name {
+          height: 19px;
         }
 
         #main.main .main-left-content .title .writer {
@@ -429,6 +438,17 @@
         transition: all 0.3s ease 0s;
       }
 
+      @media (max-width: 768px) {
+        .templates .templates__tags .tag {
+          border: 1px solid #e0e0e0;
+          border-radius: 999px;
+          cursor: pointer;
+          padding: 4px 12px;
+          transition: all 0.3s ease 0s;
+          font-size: 13px;
+        }
+      }
+
       .templates .templates__tags .tag.active {
         border: 1px solid #2355ec;
       }
@@ -496,6 +516,27 @@
         font-weight: 600;
         line-height: normal;
         margin-top: 12px;
+      }
+
+      @media (max-width: 768px) {
+        .template__card {
+          padding: 14px 16px;
+        }
+
+        .template__card .icon-list .icon {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+        }
+
+        .template__card .title {
+          font-size: 16px;
+          margin-top: 2px;
+        }
+
+        .template__card .description {
+          margin-top: 2px;
+        }
       }
 
       .template__card .description {
@@ -682,10 +723,16 @@
           <div class="px-1 sm:px-0">
             <div class="title mb-2 sm:mb-8">
               <img
+                class="logo"
                 src="https://framerusercontent.com/images/5rra1EnJHm9SdHnxyOnFE1NqGvc.png"
                 alt="icon"
               />
-              <h1 class="writer">AI Writer</h1>
+              <!-- <h1 class="writer">AI Writer</h1> -->
+              <img
+                class="name ml-2 sm:h-7 sm:ml-0"
+                src="https://appstorex.s3.us-west-2.amazonaws.com/aiwriter/AI_Writer.png"
+                alt=""
+              />
             </div>
           </div>
 
@@ -795,7 +842,7 @@
         <div class="mx-auto section__title">Templates</div>
 
         <div
-          class="templates__tags flex flex-wrap py-8 pt-4 px-2 gap-2 sm:py-16 sm:pt-10 sm:gap-4"
+          class="templates__tags flex flex-wrap py-4 pt-4 px-2 gap-2 sm:py-16 sm:pt-10 sm:gap-4"
         ></div>
         <div class="templates__list"></div>
 
