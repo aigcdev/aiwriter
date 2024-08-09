@@ -640,7 +640,7 @@
 
         @media (max-width: 640px) {
             .main {
-                padding-top: 80px;
+                padding-top: 40px;
                 height: auto;
                 gap: 0;
             }
@@ -664,7 +664,8 @@
                 display: block;
                 width: 300px;
                 margin: 0 auto;
-                height: 200px;
+                height: 180px;
+                padding-top: 20px;
             }
 
             .main .main-left-content .content .description {
@@ -695,6 +696,14 @@
                 margin-top: 12px !important;
                 margin-bottom: 0 !important;
                 height: auto !important;
+            }
+
+            .templates .templates__list {
+                padding-top: 32px;
+            }
+
+                .question-content-item-title-text {
+                font-size: 18px !important;
             }
 
 
@@ -752,6 +761,10 @@
 
         .templates {
             background-color: #ffffff;
+        }
+
+        .templates .templates-title {
+            margin-top: 12px!important;
         }
 
         /* template tags */
@@ -1031,7 +1044,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 24px;
-            padding: 0 16px;
+            padding: 32px 16px 0 !important;
         }
 
         .question-content-item {
@@ -1483,7 +1496,7 @@
                 class="templates__tags flex flex-wrap py-1 pt-4 px-2 gap-2 sm:gap-4"
         ></div>
 
-        <div class="mx-auto section__title">Generate content in seconds</div>
+        <div class="mx-auto section__title templates-title">Generate content in seconds</div>
 
         <div class="templates__list"></div>
 
