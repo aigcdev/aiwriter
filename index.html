@@ -550,7 +550,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        height: 65px;
       }
 
       .templates {
@@ -870,7 +869,7 @@
       }
 
       .question-content-item-title-text {
-        font-family: 'Roboto';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
@@ -1025,8 +1024,8 @@
     </div>
 
     <div>
-      <div class="header sticky top-0 flex item-center justify-between">
-        <a class="header-logo" href="#">
+      <header class="header sticky top-0 flex item-center justify-between">
+        <a class="header-logo" href="#" title="Logo">
           <svg
             width="32"
             height="32"
@@ -1063,7 +1062,8 @@
           </svg>
           <span class="header-logo-text">AI Writer.</span>
         </a>
-        <div class="header-center">
+
+        <nav class="header-center">
           <div
             class="header-center-item header-center-product flex items-center gap-[2px]"
           >
@@ -1087,6 +1087,7 @@
               <a
                 class="header-center-product-dropdown-item"
                 href="https://ainotebook.app/"
+                title="AI Notebook"
                 target="_blank"
               >
                 AI Note Taker: Voice,Image,Web
@@ -1094,6 +1095,7 @@
               <a
                 class="header-center-product-dropdown-item"
                 href="https://apps.apple.com/us/app/ai-keyboard-write-auto-reply/id6472762486"
+                title="AI Keyboard"
                 target="_blank"
               >
                 AI Keyboard: Auto Type & Reply
@@ -1101,6 +1103,7 @@
               <a
                 class="header-center-product-dropdown-item"
                 href="https://apps.apple.com/us/app/ai-photo-enhancer-photo-maker/id1563607678"
+                title="Photo AI"
                 target="_blank"
               >
                 Photo AI: Enhancer & Generator
@@ -1108,6 +1111,7 @@
               <a
                 class="header-center-product-dropdown-item"
                 href="https://apps.apple.com/us/app/voice-ai-clone-generation/id6450326506"
+                title="Voice AI"
                 target="_blank"
               >
                 Voice AI - Clone & Generator
@@ -1115,6 +1119,7 @@
               <a
                 class="header-center-product-dropdown-item"
                 href="https://apps.apple.com/us/app/ai-video-generator-video-ai/id1672524118"
+                title="Video AI"
                 target="_blank"
               >
                 Video.AI - AI Video Generator
@@ -1122,20 +1127,27 @@
               <a
                 class="header-center-product-dropdown-item"
                 href="https://apps.apple.com/us/app/ai-foreign-language-tutor/id6450801007"
+                title="Tutor AI"
                 target="_blank"
               >
                 Tutor AI - Foreign Language Tutor
               </a>
             </div>
           </div>
-          <a href="#Overview" class="header-center-item"> Overview </a>
-          <a href="#Templates" class="header-center-item"> Templates </a>
-          <a href="#Q&A" class="header-center-item"> Q&A </a>
-        </div>
+          <a href="#Overview" class="header-center-item" title="Overview">
+            Overview
+          </a>
+          <a href="#Templates" class="header-center-item" title="Template">
+            Templates
+          </a>
+          <a href="#Q&A" class="header-center-item" title="Q&A"> Q&A </a>
+        </nav>
+
         <a
           href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8"
           target="_blank"
           class="qrcode-area"
+          title="Download AI Writer"
         >
           <span class="qrcode-text">Try AI Writer</span>
           <svg
@@ -1190,7 +1202,7 @@
             <span>Scan to download</span>
           </div>
         </a>
-      </div>
+      </header>
 
       <div id="Overview" class="main" id="main">
         <div class="main-left-content">
@@ -1199,21 +1211,24 @@
               href="https://www.producthunt.com/products/ai-writer-essay-email-writing"
               target="_blank"
               class="title mb-2 sm:mb-7"
+              title="AI Writer on Product Hunt"
             >
               <img
                 class="logo"
+                alt="AI Writer on Product Hunt"
                 src="https://appstorex.s3.us-west-2.amazonaws.com/aiwriter/product_hunt.png"
-                alt="icon"
               />
             </a>
           </div>
-          <div class="content">
+
+          <section class="content">
             <div class="description sm:mb-11">
-              <div class="main-left-content-description-title">
+              <h1 class="main-left-content-description-title">
                 Write emails, essays, articles
                 <span style="color: #17ce92">in seconds!</span>
-              </div>
+              </h1>
             </div>
+
             <div class="info sm:mb-11">
               <div class="data store">
                 <span class="data-number">#1</span>
@@ -1237,6 +1252,7 @@
               <a
                 target="_blank"
                 href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8"
+                title="Download AI Writer IOS App"
               >
                 <img
                   class="app"
@@ -1247,6 +1263,7 @@
               <a
                 target="_blank"
                 href="https://play.google.com/store/apps/details?id=com.ai.chat.writer"
+                title="Download AI Writer Android App"
               >
                 <img
                   class="google"
@@ -1264,25 +1281,28 @@
 
             <div class="download-method">
               <div class="link">
-                <div class="introduce">
+                <p class="introduce">
                   The revolutionary new way to create content powered by ChatGPT
                   & GPT-4, GPT-3, and makes writing easier than ever before.
-                </div>
+                </p>
+
                 <div class="link-button pc">
                   <a
                     target="_blank"
                     href="https://apps.apple.com/app/apple-store/id1639845219?pt=121994524&ct=edm&mt=8"
+                    title="Download AI Writer IOS App"
                     class="mr-5"
                   >
                     <img
                       class="app"
                       src="https://framerusercontent.com/images/Fz3mb2xx2AMnewszuidPDhxETp8.png"
-                      alt="App"
+                      alt="IOS"
                     />
                   </a>
                   <a
                     target="_blank"
                     href="https://play.google.com/store/apps/details?id=com.ai.chat.writer"
+                    title="Download AI Writer Android App"
                   >
                     <img
                       class="google"
@@ -1293,12 +1313,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
+
         <div class="main-right-show pc">
           <img
             src="https://framerusercontent.com/images/6z2mCnKtylHonsilj5W4QF9rKzk.png"
-            alt="iphone"
+            alt="Screenshot of AI Writer"
           />
         </div>
       </div>
@@ -1458,247 +1479,257 @@
         </svg>
       </div>
 
-      <div id="Templates" class="templates mx-auto max-w-7xl pb-16">
+      <section id="Templates" class="templates mx-auto max-w-7xl pb-16">
         <div
           class="templates__tags flex flex-wrap py-1 pt-4 px-2 gap-2 sm:gap-4"
         ></div>
 
-        <div class="mx-auto section__title templates-title">
+        <h2 class="mx-auto section__title templates-title">
           Generate content in seconds
-        </div>
+        </h2>
 
         <div class="templates__list"></div>
 
         <div data-v-83a1617b="" class="show-more__button pc">View More</div>
-      </div>
+      </section>
 
-      <div class="review py-1">
+      <section class="review py-1">
         <div class="review-wrapper max-w-7xl mx-auto sm:my-20">
           <div class="review-top">Hear from our delighted users.</div>
 
-          <div class="mx-auto section__title">Ratings and Reviews</div>
+          <h2 class="mx-auto section__title min-h-16 pt-1">
+            Ratings and Reviews
+          </h2>
 
           <div class="review__list mt-8 sm:mt-16"></div>
         </div>
-      </div>
+      </section>
 
-      <div id="Q&A" class="questions max-w-7xl mx-auto">
+      <section id="Q&A" class="questions max-w-7xl mx-auto">
         <div>
           <div class="question-top">Q&A</div>
-          <div class="mx-auto section__title">Common Questions</div>
+          <h2 class="mx-auto section__title">Common Questions</h2>
         </div>
-        <!--         todo 优化动画-->
-        <div class="question-content">
-          <div class="question-content-item">
-            <div class="question-content-item-title">
-              <div class="question-content-item-title-text">
-                What is AI Writer?
-              </div>
-              <span class="question-content-item-title-icon">
-                <svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_4648_4897)">
-                    <path
-                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
-                      fill="url(#paint0_linear_4648_4897)"
-                    />
-                  </g>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4648_4897"
-                      x1="12.0368"
-                      y1="26.4593"
-                      x2="21.564"
-                      y2="9.53832"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#10A37F" />
-                      <stop offset="1" stop-color="#17CE92" />
-                    </linearGradient>
-                    <clipPath id="clip0_4648_4897">
-                      <rect
-                        width="19.7901"
-                        height="12.1338"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-            </div>
-            <div class="question-content-item-content">
-              AI Writer is an innovative writing app powered by artificial
-              intelligence that helps users generate high-quality written
-              content quickly and easily.
-            </div>
-          </div>
-          <div class="question-content-item">
-            <div class="question-content-item-title">
-              <div class="question-content-item-title-text">
-                What can AI Writer do for me?
-              </div>
-              <span class="question-content-item-title-icon">
-                <svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_4648_4897)">
-                    <path
-                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
-                      fill="url(#paint0_linear_4648_4897)"
-                    />
-                  </g>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4648_4897"
-                      x1="12.0368"
-                      y1="26.4593"
-                      x2="21.564"
-                      y2="9.53832"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#10A37F" />
-                      <stop offset="1" stop-color="#17CE92" />
-                    </linearGradient>
-                    <clipPath id="clip0_4648_4897">
-                      <rect
-                        width="19.7901"
-                        height="12.1338"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-            </div>
-            <div class="question-content-item-content">
-              AI Writer supercharges your writing process. Instantly generate
-              high-quality content tailored to your needs, whether it's an essay
-              or a professional email. Overcome writer's block with ready-to-use
-              templates and find inspiration for any scenario, break language
-              barriers effortlessly with multilingual capabilities and get
-              answers with smart Q&A... Unleash your creativity with innovative
-              ideas—all in seconds!
-            </div>
-          </div>
-          <div class="question-content-item">
-            <div class="question-content-item-title">
-              <div class="question-content-item-title-text">
-                Can I customize the writing style and tone?
-              </div>
-              <span class="question-content-item-title-icon">
-                <svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_4648_4897)">
-                    <path
-                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
-                      fill="url(#paint0_linear_4648_4897)"
-                    />
-                  </g>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4648_4897"
-                      x1="12.0368"
-                      y1="26.4593"
-                      x2="21.564"
-                      y2="9.53832"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#10A37F" />
-                      <stop offset="1" stop-color="#17CE92" />
-                    </linearGradient>
-                    <clipPath id="clip0_4648_4897">
-                      <rect
-                        width="19.7901"
-                        height="12.1338"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-            </div>
-            <div class="question-content-item-content">
-              Yes, AI Writer allows you to customize the writing style, tone,
-              and voice to match your specific requirements and brand
-              guidelines.
-            </div>
-          </div>
-          <div class="question-content-item">
-            <div class="question-content-item-title">
-              <div class="question-content-item-title-text">
-                Can I use AI Writer on my phone, tablet, and computer?
-              </div>
-              <span class="question-content-item-title-icon">
-                <svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_4648_4897)">
-                    <path
-                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
-                      fill="url(#paint0_linear_4648_4897)"
-                    />
-                  </g>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_4648_4897"
-                      x1="12.0368"
-                      y1="26.4593"
-                      x2="21.564"
-                      y2="9.53832"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#10A37F" />
-                      <stop offset="1" stop-color="#17CE92" />
-                    </linearGradient>
-                    <clipPath id="clip0_4648_4897">
-                      <rect
-                        width="19.7901"
-                        height="12.1338"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
-            </div>
-            <div class="question-content-item-content">
-              Yes! AI Notebook boasts a user-friendly interface that works
-              seamlessly across smartphones, tablets, and computers.
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="qrcode max-w-7xl mx-auto">
+        <div class="question-content">
+          <section class="question-content-item">
+            <div class="question-content-item-title">
+              <h3 class="question-content-item-title-text">
+                What is AI Writer?
+              </h3>
+              <span class="question-content-item-title-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4648_4897)">
+                    <path
+                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
+                      fill="url(#paint0_linear_4648_4897)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_4648_4897"
+                      x1="12.0368"
+                      y1="26.4593"
+                      x2="21.564"
+                      y2="9.53832"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#10A37F" />
+                      <stop offset="1" stop-color="#17CE92" />
+                    </linearGradient>
+                    <clipPath id="clip0_4648_4897">
+                      <rect
+                        width="19.7901"
+                        height="12.1338"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <div class="question-content-item-content">
+              <p>
+                AI Writer is an innovative writing app powered by artificial
+                intelligence that helps users generate high-quality written
+                content quickly and easily.
+              </p>
+            </div>
+          </section>
+          <section class="question-content-item">
+            <div class="question-content-item-title">
+              <h3 class="question-content-item-title-text">
+                What can AI Writer do for me?
+              </h3>
+              <span class="question-content-item-title-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4648_4897)">
+                    <path
+                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
+                      fill="url(#paint0_linear_4648_4897)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_4648_4897"
+                      x1="12.0368"
+                      y1="26.4593"
+                      x2="21.564"
+                      y2="9.53832"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#10A37F" />
+                      <stop offset="1" stop-color="#17CE92" />
+                    </linearGradient>
+                    <clipPath id="clip0_4648_4897">
+                      <rect
+                        width="19.7901"
+                        height="12.1338"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <div class="question-content-item-content">
+              <p>
+                AI Writer supercharges your writing process. Instantly generate
+                high-quality content tailored to your needs, whether it's an
+                essay or a professional email. Overcome writer's block with
+                ready-to-use templates and find inspiration for any scenario,
+                break language barriers effortlessly with multilingual
+                capabilities and get answers with smart Q&A... Unleash your
+                creativity with innovative ideas—all in seconds!
+              </p>
+            </div>
+          </section>
+          <section class="question-content-item">
+            <div class="question-content-item-title">
+              <h3 class="question-content-item-title-text">
+                Can I customize the writing style and tone?
+              </h3>
+              <span class="question-content-item-title-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4648_4897)">
+                    <path
+                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
+                      fill="url(#paint0_linear_4648_4897)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_4648_4897"
+                      x1="12.0368"
+                      y1="26.4593"
+                      x2="21.564"
+                      y2="9.53832"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#10A37F" />
+                      <stop offset="1" stop-color="#17CE92" />
+                    </linearGradient>
+                    <clipPath id="clip0_4648_4897">
+                      <rect
+                        width="19.7901"
+                        height="12.1338"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <div class="question-content-item-content">
+              <p>
+                Yes, AI Writer allows you to customize the writing style, tone,
+                and voice to match your specific requirements and brand
+                guidelines.
+              </p>
+            </div>
+          </section>
+          <section class="question-content-item">
+            <div class="question-content-item-title">
+              <h3 class="question-content-item-title-text">
+                Can I use AI Writer on my phone, tablet, and computer?
+              </h3>
+              <span class="question-content-item-title-icon">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4648_4897)">
+                    <path
+                      d="M13.6891 21.8215C13.5448 21.8215 13.4062 21.793 13.2733 21.736C13.1404 21.6791 13.0245 21.5975 12.9258 21.4911L4.10744 12.4563C3.90235 12.2512 3.7998 12.0082 3.7998 11.7271C3.7998 11.5297 3.84537 11.3512 3.93653 11.1916C4.02768 11.0321 4.15112 10.9068 4.30683 10.8157C4.46254 10.7245 4.63913 10.679 4.83661 10.679C5.11762 10.679 5.36445 10.7777 5.5771 10.9752L14.3044 19.8961H13.0853L21.8125 10.9752C22.0176 10.7777 22.2644 10.679 22.5531 10.679C22.7505 10.679 22.9271 10.7245 23.0828 10.8157C23.2386 10.9068 23.362 11.0321 23.4531 11.1916C23.5443 11.3512 23.5898 11.5297 23.5898 11.7271C23.5898 11.8714 23.5633 12.0063 23.5101 12.1316C23.4569 12.2569 23.381 12.369 23.2822 12.4677L14.4639 21.4911C14.236 21.7114 13.9778 21.8215 13.6891 21.8215Z"
+                      fill="url(#paint0_linear_4648_4897)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_4648_4897"
+                      x1="12.0368"
+                      y1="26.4593"
+                      x2="21.564"
+                      y2="9.53832"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#10A37F" />
+                      <stop offset="1" stop-color="#17CE92" />
+                    </linearGradient>
+                    <clipPath id="clip0_4648_4897">
+                      <rect
+                        width="19.7901"
+                        height="12.1338"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 23.5898 9.68774)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <div class="question-content-item-content">
+              <p>
+                Yes! AI Notebook boasts a user-friendly interface that works
+                seamlessly across smartphones, tablets, and computers.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="qrcode max-w-7xl mx-auto">
         <div>
           <div class="qrcode-top">
             Join millions who have elevated productivity with AI Writer.
           </div>
-          <div class="mx-auto section__title qrcode-title">
+          <h2 class="mx-auto section__title qrcode-title">
             Write anything in seconds.
-          </div>
+          </h2>
         </div>
         <div class="qrcode-item-area">
           <div class="qrcode-item">
@@ -1716,7 +1747,7 @@
             <span>Android</span>
           </div>
         </div>
-      </div>
+      </section>
 
       <footer class="footer">
         <div class="max-w-7xl m-auto">
@@ -1725,7 +1756,11 @@
               <img class="h-10" src="./assets/app_logo.png" alt="logo" />
             </a>
             <div class="flex items-center justify-end gap-8">
-              <a href="https://www.youtube.com/@ai_writer_app" target="_blank">
+              <a
+                href="https://www.youtube.com/@ai_writer_app"
+                target="_blank"
+                title="AI Writer YouTube"
+              >
                 <svg
                   width="24"
                   height="25"
@@ -1756,27 +1791,40 @@
 
           <div class="divider"></div>
 
-          <div class="bottom flex flex-wrap" style="color: rgb(255, 255, 255)">
-            <div class="copyright text-xs sm:text-sm mb-2 sm:mb-0">
+          <div
+            class="bottom flex flex-wrap justify-center"
+            style="color: rgb(255, 255, 255)"
+          >
+            <div class="copyright text-center sm:text-left">
               © Copyright 2024, All Rights Reserved
             </div>
 
-            <div class="sections flex-1 flex gap-4 justify-center">
-              <section class="section">
-                <a target="_blank" href="/policy.html">Privacy</a>
-              </section>
+            <div class="sections flex-1 flex gap-4 justify-center py-4 sm:py-0">
+              <div class="section">
+                <a target="_blank" href="/policy.html" title="Privacy"
+                  >Privacy</a
+                >
+              </div>
               <span>·</span>
-              <section class="section">
-                <a target="_blank" href="/terms.html">Terms of Use</a>
-              </section>
+              <div class="section">
+                <a target="_blank" href="/terms.html" title="Terms of Use"
+                  >Terms of Use</a
+                >
+              </div>
               <span>·</span>
-              <section class="section">
-                <a target="_blank" href="/support.html">Support</a>
-              </section>
+              <div class="section">
+                <a target="_blank" href="/support.html" title="Support"
+                  >Support</a
+                >
+              </div>
             </div>
 
-            <div class="contact-us text-xs sm:text-sm">
-              <a href="mailto:ai.writer@outlook.com" rel="noopener noreferrer">
+            <div class="contact-us">
+              <a
+                href="mailto:ai.writer@outlook.com"
+                rel="noopener noreferrer"
+                title="Contact Us"
+              >
                 Contact Us: ai.writer@outlook.com</a
               >
             </div>
